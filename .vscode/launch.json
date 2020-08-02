@@ -12,7 +12,9 @@
             "env": {
                 "FLASK_APP": "app.py",
                 "FLASK_ENV": "development",
-                "FLASK_DEBUG": "0"
+                "FLASK_DEBUG": "0",
+                "APP_SETTINGS": "config.DevelopmentConfig",
+                "DATABASE_URL":"postgresql+psycopg2://postgres:postgres@127.0.0.1:5432/apiserver_dev"
             },
             "args": [
                 "run",
